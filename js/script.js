@@ -1,4 +1,4 @@
-/* ==========================Email ==================*/
+/* ==========================Sample commit github ==================*/
 
 /* ==========================toggle icon navbar ==================*/
 let menuIcon = document.querySelector('#menu-icon');
