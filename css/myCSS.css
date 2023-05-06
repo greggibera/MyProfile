@@ -612,6 +612,34 @@ width: 100%;
   color: var(--second-bg-color);
 }
 
+.success-container {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.success-page {
+ 
+  background: var(--second-bg-color);
+  height: 50vh;
+  width: 100%;
+ 
+  
+}
+
+.success-page h3 {
+  font-size: 3.5rem;
+}
+
+.success-page p {
+  font-size: 1.6rem;
+}
+
 /* breakpoints*/
 @media (max-width:1200px){
   html{
