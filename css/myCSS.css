@@ -573,6 +573,20 @@ width: 100%;
    width: 49%;
  }
 
+ input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(rgb(26, 26, 27), rgba(70, 90, 126, 0.4)) !important;
+  color: fieldtext !important;
+}
+
+ input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
  .contact form  textarea{
   resize: none;
  }
@@ -580,6 +594,20 @@ width: 100%;
  .contact form .btn{
   margin-top: 2rem;
   cursor: pointer;
+ }
+
+ .error{
+  border:3px solid var(--main-color);
+  animation:shake 500ms;
+ }
+
+ @keyframes shake {
+
+  0% {transform:rotate(5deg)}
+  25% {transform:rotate(-5deg)}
+  50% {transform:rotate(5deg)}
+  75% {transform:rotate(-5deg)}
+  100% {transform:rotate(0deg)}
  }
 
  .footer {

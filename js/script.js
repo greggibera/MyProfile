@@ -1,6 +1,58 @@
 /* ==========================Sample commit github ==================*/
 
 /* ==========================toggle icon navbar ==================*/
+const myForm = document.getElementById('contact_form');
+const btn = document.getElementById('btn');
+const errorName = document.getElementById('name');
+const errorEmail = document.getElementById('email');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function validateMe(event) {
+  errorName.classList.remove('error');
+  errorEmail.classList.remove('error');
+  errorName.classList.add('name');
+  errorEmail.classList.add('email');
+  var isValid = false;
+  var fullName = document.querySelector('.name').value;
+  var email = document.querySelector('.email').value;
+  const emailchecker = emailRegex.test(email);
+  event.preventDefault();
+  if (fullName == "") {
+    errorName.classList.remove('name');
+    errorName.classList.add('error');
+  } 
+  else 
+  {
+    errorName.classList.remove('error');
+    errorName.classList.add('name');
+  }
+
+  if (email == "") 
+  {
+    errorEmail.classList.add('error');
+    errorEmail.classList.remove('email');
+  } 
+  else {
+    errorEmail.classList.add('email');
+    errorEmail.classList.remove('error');
+  }
+
+  if (!emailchecker) 
+  {
+    errorEmail.classList.add('error');
+    errorEmail.classList.remove('email');
+  }
+
+  if (fullName != "" && email != "" && emailchecker) {
+    myForm.submit();
+    isValid = true;
+  }
+  return isValid;
+};
+
+btn.addEventListener('click', validateMe);
+
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
