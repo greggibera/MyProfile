@@ -120,14 +120,23 @@ section .gallery {
   width:  100%;
   padding-bottom:  15px;
   border-radius: 5px;
+  
 }
 
 /* .container .box .dream img:hover{
   transform: scale(1.5);
-  transition: transform .2s;
-  position: center;
+  transition: transform .2s ease;
+  position: relative;
 } */
+.blur-image {
+  filter: blur(5px); /* Initial blur effect */
+  transition: filter 0.3s ease; /* Transition for smooth effect */
+}
 
+
+.loaded {
+  filter: none; /* Remove the blur effect */
+}
 
 .gallery-btn {
   display: flex;
@@ -832,7 +841,7 @@ text-align: center;
   }
   .about-img img {
     width: 55vw;
-}
+  }
   .signature{
     width: 15vw;
     height: 20vw;
@@ -908,10 +917,10 @@ text-align: center;
     padding-right: 15px;
     padding-bottom: 15px;
     border-radius: 3%;
-  }
+    
    
 }
-
+}
 @media (max-width: 617px){
   .portfolio-container {
     grid-template-columns: 1fr;
@@ -919,6 +928,11 @@ text-align: center;
   .signature{
     width: 15vw;
     height: 18vw;
+    
+  }
+  .container
+  {
+    margin-top: 15%;
   }
 }
 
@@ -932,6 +946,10 @@ text-align: center;
   .signature{
     height: 2vw;
   }
+  .container
+  {
+    margin-top: 20%;
+  }
 }
 
 @media (max-width: 365px) {
@@ -944,7 +962,7 @@ text-align: center;
   }
  .about-img img {
     width: 45vw;
-}
+  }
   .footer {
     flex-direction: column-reverse;
   }
@@ -952,6 +970,8 @@ text-align: center;
     text-align: center;
     margin-top: 2rem;
   }
+  .container
+  {
+    margin-top: 20%;
+  }
 } 
-
-

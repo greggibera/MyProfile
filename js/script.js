@@ -62,6 +62,12 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
 
+
+window.addEventListener('load', function() {
+  var image = document.querySelector('.blur-image');
+  image.classList.add('loaded'); // Add the 'loaded' class to the image
+});
+
 /* ==========================scroll  section active link ==================*/
 
 let sections = document.querySelectorAll('section');
@@ -138,3 +144,4 @@ function addPictures(){
     z.style.display = "none";
   }
 }
+
