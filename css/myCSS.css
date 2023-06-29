@@ -83,6 +83,8 @@ section .gallery {
 
 /*  gallery css  */
 
+
+
 .container {
   display:flex;
   flex-direction: column;
@@ -114,29 +116,34 @@ section .gallery {
   display: flex;
   flex-direction: column;
   width:  32.5%;
+  gap: 30px;
 }
+
+.container .box .dream .blur-load{
+  background-size: cover;
+  background-position: center;
+  padding-bottom:  15px;
+  width:  100%;
+  height: 400px;
+  border-radius: 5px;
+}
+
 
 .container .box .dream img{
   width:  100%;
   padding-bottom:  15px;
   border-radius: 5px;
-  
+  object-position: center;
+  object-fit: cover;
 }
+
+
 
 /* .container .box .dream img:hover{
   transform: scale(1.5);
   transition: transform .2s ease;
   position: relative;
 } */
-.blur-image {
-  filter: blur(5px); /* Initial blur effect */
-  transition: filter 0.3s ease; /* Transition for smooth effect */
-}
-
-
-.loaded {
-  filter: none; /* Remove the blur effect */
-}
 
 .gallery-btn {
   display: flex;
