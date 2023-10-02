@@ -1,6 +1,17 @@
-/* ==========================Sample commit github ==================*/
+
 
 /* ==========================toggle icon navbar ==================*/
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+};
+
+/* ========================== form Validation==================*/
 const myForm = document.getElementById('contact_form');
 const btn = document.getElementById('btn');
 const errorName = document.getElementById('name');
@@ -51,18 +62,6 @@ function validateMe(event) {
 };
 
 btn.addEventListener('click', validateMe);
-
-
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-};
-
-
 /* ==========================scroll  section active link ==================*/
 
 let sections = document.querySelectorAll('section');
@@ -114,7 +113,10 @@ const typed= new Typed('.multiple-text', {
   loop:true
 });
 
+/* ==================OnClick Images==================*/
 
+
+/* ===================AddImages==================*/
 
 function addPictures(){
 
@@ -139,4 +141,5 @@ function addPictures(){
     z.style.display = "none";
   }
 }
+
 

@@ -1,128 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
   <link rel="stylesheet" href="css/myCSS.css">
 </head>
+
 <body>
-  <header class="header">
-    <a href="#" class="logo">Gregg</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-    <nav class="navbar">
-        <a href="index.html#home" class="active">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#career">Career</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#portfolio">Portfolio</a>
-        <a href="index.html#contact">Contact</a>
-    </nav>
-  </header>
- 
-  <div class="container">
-      <div class="heading" id="heading">
-        <h3>Photo <span>Gallery</span></h3>
-      </div>
-      <section id="gallery" class="gallery">
-<div class="box">
-      <div class="dream">
-
-        <div class="blur-load" style="background-image: url(images/gallery/1-small.jpg);">
-          <img src="images/gallery/1.jpg" loading="lazy" alt="" >
-        </div>
-
-        <div class="blur-load" style="background-image: url(images/gallery/2-small.jpg);">
-          <img src="images/gallery/2.jpgs" loading="lazy" alt="">
-        </div>
-        <img src="images/gallery/3.jpg" loading="lazy" alt="">
-        <img src="images/gallery/4.jpg" loading="lazy" alt="">
-        <img src="images/gallery/5.jpg" loading="lazy" alt="">
-        <img src="images/gallery/6.jpg" loading="lazy" alt="">
-      </div>
-
-      <div class="dream">
-        <div class="blur-load" style="background-image: url(images/gallery/2-small.jpg);">
-          <img src="images/gallery/7.jpg" loading="lazy" alt="">
-        </div>
-        
-        <div class="blur-load" style="background-image: url(images/gallery/2-small.jpg);">
-          <img src="images/gallery/8.jpgs" loading="lazy" alt="">
-        </div>
-        <img src="images/gallery/9.jpg" loading="lazy" alt="">
-        <img src="images/gallery/10.jpg" loading="lazy" alt="">
-        <img src="images/gallery/11.jpg" loading="lazy" alt="">
-        <img src="images/gallery/12.jpg" loading="lazy" alt="">
-        <img src="images/gallery/19.jpg" loading="lazy" alt="">
-      </div>
-
-      <div class="dream">
-        
-        <div class="blur-load" style="background-image: url(images/gallery/2-small.jpg);">
-        <img src="images/gallery/13.jpg" loading="lazy" alt="">
-        </div>
-        <div class="blur-load" style="background-image: url(images/gallery/2-small.jpg);">
-          <img src="images/gallery/14.jpgs" loading="lazy" alt="">
-        
-        </div>
-
-
-        <img src="images/gallery/15.jpg" loading="lazy" alt="">
-        <img src="images/gallery/16.jpg" loading="lazy" alt="">
-        <img src="images/gallery/17.jpg" loading="lazy" alt="">
-        <img src="images/gallery/18.jpg" loading="lazy" alt="">
-        <img src="images/gallery/20.jpg" loading="lazy" alt="">
-      </div>
-    </div>
-    <div class="gallery-btn">
-      <a class="btn" id="btn-goBack" href="index.html">Go Back</a>
-      <a class="btn" id="viewMore" onclick="addPictures()">View More</a>
-    </div>
-    <div id="more" style="display:none;">
-      <div class="box">
-        <div class="dream">
-          <img  src="images/gallery/21.jpeg" loading="lazy" alt="">
-          <img src="images/gallery/28.jpg"  loading="lazy" alt="">
-          <img src="images/gallery/29.jpg" loading="lazy" alt="">
-        </div>
-        <div class="dream">
-          <img src="images/gallery/24.jpg" loading="lazy" alt="">
-          <img src="images/gallery/25.jpeg"  loading="lazy"alt="">
-          <img src="images/gallery/26.jpeg"loading="lazy" alt="">
-        </div>
-        <div class="dream">
-          <img src="images/gallery/27.jpeg"loading="lazy" alt="">
-          <img src="images/gallery/23.jpg"loading="lazy" alt="">
-          <img src="images/gallery/30.jpg"loading="lazy" alt="">
-        </div>
-        </div>
-        <a class="btn" href="index.html" style="margin-bottom: 3rem;">Go Back</a>
-       
-      </div>
-
-    </div>
-
-  </div>
-      </section>
     
-  <footer class="footer">
-    <div>
-    </div>
-    <div class="footer-text">
-      <h1>Gregg Victor Ibera</h1>
-      <p>Copyright &copy; 2023</p>
+    <header class="header">
+        <a href="#" class="logo">Gregg</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#career">Career</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="heading" id="heading">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+
+        <section id="gallery" class="gallery">
+
+            <div class="box">
+                <div class="dream">
+                    <img src="images/gallery/1.jpg" loading="lazy" alt="Image 1" >
+                   
+                    <img src="images/gallery/2.jpg" loading="lazy" alt="Image 2" >
+                    <img src="images/gallery/3.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/4.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/5.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/6.jpg" loading="lazy" alt="">
+                </div>
+
+                <div class="dream">
+                    <img src="images/gallery/7.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/8.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/9.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/10.jpg" loading="lazy" alt="">
+                    <!-- <img src="images/gallery/11.jpeg" loading="lazy" alt=""> -->
+                    <img src="images/gallery/12.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/19.jpg" loading="lazy" alt="">
+                </div>
+
+                <div class="dream">
+                    <img src="images/gallery/13.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/14.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/15.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/16.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/17.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/18.jpg" loading="lazy" alt="">
+                    <img src="images/gallery/20.jpg" loading="lazy" alt="">
+                </div>
+            </div>
+
+            <div class="gallery-btn">
+                <a class="btn" id="btn-goBack" href="index.html">Go Back</a>
+                <a class="btn" id="viewMore" onclick="addPictures()">View More</a>
+            </div>
+            <div id="more" style="display:none;">
+                <div class="box">
+                    <div class="dream">
+                        <img src="images/gallery/21.jpeg" loading="lazy" alt="">
+                        <img src="images/gallery/28.jpg" loading="lazy" alt="">
+                        <img src="images/gallery/29.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="dream">
+                        <img src="images/gallery/24.jpg" loading="lazy" alt="">
+                        <img src="images/gallery/25.jpeg" loading="lazy" alt="">
+                        <img src="images/gallery/26.jpeg" loading="lazy" alt="">
+                    </div>
+                    <div class="dream">
+                        <img src="images/gallery/27.jpeg" loading="lazy" alt="">
+                        <img src="images/gallery/23.jpg" loading="lazy" alt="">
+                        <img src="images/gallery/30.jpg" loading="lazy" alt="">
+                    </div>
+                </div>
+                <a class="btn" href="index.html" style="margin-bottom: 3rem;">Go Back</a>
+
+            </div>
+        </section>
     </div>
 
-    <div  class="footer-iconTop">
-      <a href="#heading"> <i class='bx bx-up-arrow-alt'></i></a>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-  <!--scroll reveal-->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  
+   
+
+    <footer class="footer">
+        <div>
+        </div>
+        <div class="footer-text">
+            <h1>Gregg Victor Ibera</h1>
+            <p>Copyright &copy; 2023</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#heading"> <i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
+
 </html>
